@@ -1,0 +1,109 @@
+:root {
+
+}
+
+
+/* ***************************************************** */
+/* Buttons */
+/* ***************************************************** */
+
+.btn-cta {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 30px;
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid #1A1A1A;
+    border-radius: 50px;
+    padding: 12px 32px 12px 24px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    transition: all 200ms;
+}
+
+.btn-cta span {
+    display: inline-block;
+    margin-right: 24px;
+}
+
+.btn-cta:hover, .btn-cta:focus {
+    color: #fff;
+    border-color: #999999;
+}
+
+.btn-cta.slim {
+    padding: 0;
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 0;
+    text-transform: none;
+}
+
+.block.active .btn-cta {
+    color: #fff;
+    background-color: #0F5B55;
+    border-color: transparent;
+}
+
+.block.active .btn-cta.slim {
+    background-color: transparent;
+    color: #050505;
+}
+
+.block.active .btn-cta.slim svg path {
+    fill: #050505;
+}
+
+.block.active .btn-cta.outlined {
+    text-transform: none;
+    border-color: #787C84;
+    background-color: transparent;
+    color: #050505;
+}
+
+.block.active .btn-cta.outlined svg path {
+    fill: #050505;
+}
+
+
+
+/* ***************************************************** */
+/* Case Studies */
+/* ***************************************************** */
+
+
+.block.active .case-study-header {
+    border-color: #050505!important;
+}
+
+.block.active #case-studies .content p {
+    color: #5F6063;
+}
+
+
+
+/* ***************************************************** */
+/* Reviews */
+/* ***************************************************** */
+
+.block.active #reviews .sidebar button {
+    color: #050505;
+}
+
+.block.active #reviews .sidebar button.active {
+    color: #fff;
+}
+
+#reviews .testimonial p span {
+    font-weight: 700;
+}
+
+#reviews .testimonial[data-highlight="#0F5B55"] p span {color: #0F5B55;}
+#reviews .testimonial[data-highlight="#312651"] p span {color: #312651;}
+#reviews .testimonial[data-highlight="#C44E6B"] p span {color: #C44E6B;}

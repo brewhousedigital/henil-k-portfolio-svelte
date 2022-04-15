@@ -1,0 +1,30 @@
+[
+  {
+    "icon": "light",
+    "bgColor": "#0F5B55",
+    "hoverContent": "The starting point of every project is research. The ideate phase helps clients re-imagine their projects to better respond to their users’ needs and requirements.",
+    "title": "Learn",
+    "content": "Requirements. Research. Ideation. Users’ needs."
+  },
+  {
+    "icon": "puzzle",
+    "bgColor": "#312651",
+    "hoverContent": "The strategy starts from the project scope and continue with the implementation of techniques to consolidate a concrete plan to meet the set deadlines.",
+    "title": "Plan/Define",
+    "content": "Project scope. Analysis. Journey mapping."
+  },
+  {
+    "icon": "palette",
+    "bgColor": "#C44E6B",
+    "hoverContent": "Everything we learned in the research phase comes to life through a design studied in every detail and that fully respects the objective of the project.",
+    "title": "Design",
+    "content": "Lo/Mid-fi Wireframe.  Visual design. Prototype."
+  },
+  {
+    "icon": "star",
+    "bgColor": "#EABA00",
+    "hoverContent": "We are ready to launch the product on the market together, supporting you in the launch phase but also in the next phase of improvement and feedback collection.",
+    "title": "Test & Build",
+    "content": "Qualitative Testing. Accessibility Evaluation. Build test & improvement."
+  }
+]
