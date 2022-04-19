@@ -17,7 +17,7 @@
     }
 </script>
 
-
+<div class="case-study-container">
 <div class="row align-items-center">
     <div class="col-lg-6">
         <div class="content">
@@ -41,9 +41,13 @@
         <img {src} alt="Case Study example of {title}" class="img-fluid" />
     </div>
 </div>
+</div>
 
 
 <style>
+    .case-study-container{
+        padding: 0 80px;
+    }
     .content {
         max-width: 461px;
     }

@@ -14,5 +14,9 @@
     "@sveltejs/kit": "next",
     "svelte": "^3.44.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@splidejs/svelte-splide": "^0.2.1",
+    "marquee3000": "^1.1.1"
+  }
 }

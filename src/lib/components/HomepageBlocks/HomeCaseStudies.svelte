@@ -1,4 +1,7 @@
 <script>
+    import '@splidejs/splide/css';
+    import { Splide, SplideSlide } from '@splidejs/svelte-splide';
+
     import IconArrowRight from "$lib/assets/IconArrowRight.svelte";
     import listOfCaseStudies from "$lib/data/listOfCaseStudies.json";
     import CaseStudy from "$lib/components/CaseStudy.svelte";
@@ -19,15 +22,19 @@
 
 
     <div class="container">
+        <Splide aria-label="My Case Studies" options={{type: 'loop', pagination: false}}>
         {#each listOfCaseStudies as item, index}
-            <CaseStudy {index}
-                       tag={item.tag}
-                       title={item.title}
-                       content={item.content}
-                       href={item.href}
-                       src={item.src}
-            />
+            <SplideSlide>
+                <CaseStudy {index}
+                           tag={item.tag}
+                           title={item.title}
+                           content={item.content}
+                           href={item.href}
+                           src={item.src}
+                />
+            </SplideSlide>
         {/each}
+        </Splide>
     </div>
 </section>
 

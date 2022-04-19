@@ -114,3 +114,14 @@ h1, h2, h3, h4, h5, h6,
 #reviews .testimonial[data-highlight="#0F5B55"] p span {color: #0F5B55;}
 #reviews .testimonial[data-highlight="#312651"] p span {color: #312651;}
 #reviews .testimonial[data-highlight="#C44E6B"] p span {color: #C44E6B;}
+
+
+
+
+/* ***************************************************** */
+/* Marquee */
+/* ***************************************************** */
+
+.block.active .marquee-wrapper {
+    opacity: 1!important;
+}
