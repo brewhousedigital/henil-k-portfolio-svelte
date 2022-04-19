@@ -76,6 +76,7 @@
         width: 95vw;
         overflow: hidden;
         position: relative;
+        user-select: none;
     }
 
     .marquee-border img {
