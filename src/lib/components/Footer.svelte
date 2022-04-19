@@ -1,5 +1,5 @@
 <script>
-
+    import LogoWhite from "$lib/assets/LogoWhite.svelte";
 </script>
 
 
@@ -7,7 +7,10 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <div class="logo">HK</div>
+                <div class="logo">
+                    <LogoWhite />
+                </div>
+
                 <p>© 2022 Henil Kajavadra</p>
             </div>
 
@@ -69,5 +72,9 @@
         line-height: 40px;
         color: #1A1A1A;
         font-weight: 600;
+    }
+
+    .logo {
+        margin-bottom: 24px;
     }
 </style>

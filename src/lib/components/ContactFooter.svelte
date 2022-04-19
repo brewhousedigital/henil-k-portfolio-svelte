@@ -35,6 +35,10 @@
         padding-top: 96px;
     }
 
+    #contact-footer h2 {
+        font-weight: 600;
+    }
+
     .contact-footer-content {
         margin-bottom: 96px;
     }

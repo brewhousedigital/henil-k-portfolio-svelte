@@ -1,4 +1,6 @@
 <script>
+    import LogoWhite from "$lib/assets/LogoWhite.svelte";
+
     let links = [
         {text: "About", href: "/about"},
         {text: "Works", href: "/works"},
@@ -11,7 +13,7 @@
 <header>
     <div class="container d-flex align-items-center justify-content-between">
         <a href="/" class="logo" sveltekit:prefetch>
-            HK
+            <LogoWhite />
         </a>
 
         <nav>
