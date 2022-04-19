@@ -21,7 +21,13 @@
         <div class="marquee3k" data-speed="1">
             <div>
                 <div class="marquee-container">
-                    <img src="/images/marquee/Usability Testing-min.png"
+                    <div class="marquee-text marquee-text-1C2334">Usability Testing</div>
+                    <div class="marquee-text marquee-text-0F5B55">UX Design</div>
+                    <div class="marquee-text marquee-text-312651">Visual Design</div>
+                    <div class="marquee-text marquee-text-C44E6B">UX Research</div>
+                    <div class="marquee-text marquee-text-EABA00">Information Architecture</div>
+
+                    <!--<img src="/images/marquee/Usability Testing-min.png"
                          alt="Usability Testing"
                          class="img-fluid"
                          width="388"
@@ -45,7 +51,7 @@
                          alt="Information Architecture"
                          class="img-fluid"
                          width="577"
-                         height="37" />
+                         height="37" />-->
                 </div>
             </div>
         </div>
@@ -96,12 +102,23 @@
     }
 
     .marquee-container {
-        width: 2041px;
+        /*width: 2041px;*/
         display: flex;
         align-items: center;
     }
 
-    .marquee-container img {
+    .marquee-text {
         margin: 0 20px;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 48px;
+        text-shadow: 0 0 3px #000, 0 0 3px #000;
+        color: #fff;
     }
+
+    .marquee-text-1C2334 {text-shadow: 0 0 2px #1C2334, 0 0 2px #1C2334, 0 0 2px #1C2334;}
+    .marquee-text-0F5B55 {text-shadow: 0 0 2px #0F5B55, 0 0 2px #0F5B55, 0 0 2px #0F5B55;}
+    .marquee-text-312651 {text-shadow: 0 0 2px #312651, 0 0 2px #312651, 0 0 2px #312651;}
+    .marquee-text-C44E6B {text-shadow: 0 0 2px #C44E6B, 0 0 2px #C44E6B, 0 0 2px #C44E6B;}
+    .marquee-text-EABA00 {text-shadow: 0 0 2px #EABA00, 0 0 2px #EABA00, 0 0 2px #EABA00;}
 </style>

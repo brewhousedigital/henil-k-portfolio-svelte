@@ -1,5 +1,6 @@
 <script>
     import listOfReviews from "$lib/data/listOfReviews.json";
+    import Quote from "$lib/assets/Quote.svelte";
 
     export let visible = false;
 
@@ -18,7 +19,9 @@
 
 
 <section id="reviews" class={visible ? 'active' : ''}>
-    <div class="container">
+    <div class="container position-relative">
+        <div class="quote"><Quote /></div>
+
         <h2>Top quality & high results are what I bring to my clients.</h2>
 
         <div class="d-flex align-items-center justify-content-between">
@@ -56,6 +59,13 @@
 
     #reviews .container {
         max-width: 934px;
+    }
+
+    .quote {
+        position: absolute;
+        top: -43px;
+        left: -57px;
+        opacity: 0.3;
     }
 
     h2 {
