@@ -38,7 +38,7 @@
 
 <style>
     .intro {
-        padding: 72px 0;
+        padding: 40px 0;
         min-height: 100vh;
         background-color: #000;
         color: #fff;
@@ -46,6 +46,7 @@
 
     .intro img {
         border-radius: 24px;
+        margin-bottom: 32px;
     }
 
     .intro-content {
@@ -54,19 +55,38 @@
 
     .intro h1 {
         font-weight: 500;
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 22px;
+        line-height: 28px;
         margin-bottom: 20px;
     }
 
     .intro p {
         font-size: 20px;
-        line-height: 32px;
+        line-height: 26px;
         color: #999999;
         margin-bottom: 30px;
     }
 
     .intro p:last-child {
         margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        .intro {
+            padding: 72px 0;
+        }
+
+        .intro img {
+            margin-bottom: 0;
+        }
+
+        .intro h1 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+
+        .intro p {
+            line-height: 32px;
+        }
     }
 </style>

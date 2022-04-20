@@ -6,7 +6,7 @@
 
 
 <section class="photos">
-    <div class="container">
+    <div class="container text-md-start text-center">
         <h2>Outside of work</h2>
         <p>I Love capturing moments and random things while adventuring Hills and traveling historical places.</p>
 
@@ -39,20 +39,43 @@
 
     .photos h2 {
         color: #999999;
-        font-size: 22px;
-        line-height: 36px;
+        font-size: 18px;
+        line-height: 23px;
         font-weight: 600;
+        margin-bottom: 12px;
     }
 
     .photos p {
         color: #1A1A1A;
-        font-size: 32px;
-        line-height: 48px;
+        font-size: 22px;
+        line-height: 28px;
         font-weight: 600;
-        margin-bottom: 40px;
+        margin-bottom: 16px;
     }
 
     .photos .photos-border {
-        margin-bottom: 64px;
+        margin-bottom: 48px;
+    }
+
+    @media screen and (min-width: 768px) {
+        .photos {
+            padding: 72px 0;
+        }
+
+        .photos h2 {
+            font-size: 22px;
+            line-height: 36px;
+            margin-bottom: 16px;
+        }
+
+        .photos p {
+            font-size: 32px;
+            line-height: 48px;
+            margin-bottom: 40px;
+        }
+
+        .photos .photos-border {
+            margin-bottom: 64px;
+        }
     }
 </style>
