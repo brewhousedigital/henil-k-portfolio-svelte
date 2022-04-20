@@ -45,6 +45,7 @@
         height: 100%;
         min-height: 204px;
         cursor: help;
+        margin: 0 auto;
     }
 
     .hover {

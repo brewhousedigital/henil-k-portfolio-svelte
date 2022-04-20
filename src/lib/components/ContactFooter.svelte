@@ -9,7 +9,7 @@
 
 
 <section id="contact-footer">
-    <div class="container contact-footer-content text-lg-start text-center">
+    <div class="container contact-footer-content text-xl-start text-center">
         <div class="row align-items-center">
             <div class="col-xl-6 content">
                 <div class="pulse"><Pulse /></div>
@@ -62,7 +62,6 @@
     }
 
     .content p {
-        max-width: 430px;
         font-size: 20px;
         line-height: 28px;
     }
@@ -71,9 +70,15 @@
         margin-bottom: 48px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
         .lets-chat {
             margin-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .content p {
+            max-width: 430px;
         }
     }
 
