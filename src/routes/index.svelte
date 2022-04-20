@@ -21,7 +21,7 @@
 </HomepageBlockContainer>
 
 
-<HomepageBlockContainer customHeight="68vh">
+<HomepageBlockContainer>
     <HomeReviews />
 </HomepageBlockContainer>
 

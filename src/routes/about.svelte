@@ -26,7 +26,7 @@
 </section>
 
 
-<HomepageBlockContainer>
+<HomepageBlockContainer customHeight="68vh">
     <AboutPhotoSlider />
 </HomepageBlockContainer>
 
