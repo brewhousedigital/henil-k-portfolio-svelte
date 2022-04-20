@@ -19,9 +19,16 @@
 <style>
     .block {
         min-height: 100vh;
-        background-color: #000;
-        color: #fff;
+        background-color: #fff;
+        color: #050505;
         transition: all 2000ms;
+    }
+
+    @media screen and (min-width: 768px) {
+        .block {
+            background-color: #000;
+            color: #fff;
+        }
     }
 
     .block.active {

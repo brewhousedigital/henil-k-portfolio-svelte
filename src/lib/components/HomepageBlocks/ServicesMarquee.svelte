@@ -111,7 +111,7 @@
     .marquee-text {
         margin: 0 20px;
         font-weight: 600;
-        font-size: 48px;
+        font-size: 32px;
         line-height: 48px;
         text-shadow: 0 0 3px #000, 0 0 3px #000;
         color: #fff;
@@ -122,4 +122,11 @@
     .marquee-text-312651 {text-shadow: 0 0 2px #312651, 0 0 2px #312651, 0 0 2px #312651;}
     .marquee-text-C44E6B {text-shadow: 0 0 2px #C44E6B, 0 0 2px #C44E6B, 0 0 2px #C44E6B;}
     .marquee-text-EABA00 {text-shadow: 0 0 2px #EABA00, 0 0 2px #EABA00, 0 0 2px #EABA00;}
+
+    @media screen and (min-width: 768px) {
+        .marquee-text {
+            font-size: 48px;
+            line-height: 48px;
+        }
+    }
 </style>

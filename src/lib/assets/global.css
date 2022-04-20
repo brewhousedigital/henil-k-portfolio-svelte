@@ -16,13 +16,14 @@ h1, h2, h3, h4, h5, h6,
 
 .btn-cta {
     color: #fff;
+    background-color: #0F5B55;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
     line-height: 30px;
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    border: 2px solid #1A1A1A;
+    border: 2px solid transparent;
     border-radius: 50px;
     padding: 12px 32px 12px 24px;
     text-align: center;
@@ -30,6 +31,15 @@ h1, h2, h3, h4, h5, h6,
     cursor: pointer;
     user-select: none;
     transition: all 200ms;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .btn-cta {
+        display: inline-flex;
+        color: #fff;
+        border: 2px solid #1A1A1A;
+    }
 }
 
 .btn-cta span {
@@ -78,6 +88,10 @@ h1, h2, h3, h4, h5, h6,
     fill: #050505;
 }
 
+.btn-cta-0F5B55 {background-color: #0F5B55!important;}
+.btn-cta-312651 {background-color: #312651!important;}
+.btn-cta-C44E6B {background-color: #C44E6B!important;}
+
 
 
 /* ***************************************************** */
@@ -98,7 +112,6 @@ h1, h2, h3, h4, h5, h6,
 /* ***************************************************** */
 /* Reviews */
 /* ***************************************************** */
-
 .block.active #reviews .sidebar button {
     color: #050505;
 }
@@ -115,6 +128,11 @@ h1, h2, h3, h4, h5, h6,
 #reviews .testimonial[data-highlight="#312651"] p span {color: #312651;}
 #reviews .testimonial[data-highlight="#C44E6B"] p span {color: #C44E6B;}
 
+@media screen and (min-width: 768px) {
+    .block.active #reviews .sidebar button {
+        background-color: transparent;
+    }
+}
 
 
 
@@ -124,4 +142,10 @@ h1, h2, h3, h4, h5, h6,
 
 .block.active .marquee-wrapper {
     opacity: 1!important;
+}
+
+@media screen and (max-width: 768px) {
+    .marquee-wrapper {
+        opacity: 1!important;
+    }
 }

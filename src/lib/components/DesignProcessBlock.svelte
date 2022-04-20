@@ -57,8 +57,8 @@
         border-radius: 16px;
         box-shadow: 0 0 24px rgba(15, 91, 85, 0.24);
         padding: 24px 12px;
-        font-size: 24px;
-        line-height: 31px;
+        font-size: 18px;
+        line-height: 28px;
         color: #F2F2F2;
     }
 
@@ -68,15 +68,32 @@
 
     h3 {
         font-weight: 500;
-        font-size: 28px;
-        line-height: 40px;
+        font-size: 22px;
+        line-height: 32px;
         margin-bottom: 4px;
     }
 
     p {
-        font-size: 24px;
-        line-height: 36px;
+        font-size: 20px;
+        line-height: 26px;
         max-width: 397px;
         margin: 0 auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        h3 {
+            font-size: 28px;
+            line-height: 40px;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        .hover {
+            font-size: 24px;
+            line-height: 31px;
+        }
     }
 </style>

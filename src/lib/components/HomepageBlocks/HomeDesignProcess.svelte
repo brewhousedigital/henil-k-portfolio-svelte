@@ -40,20 +40,34 @@
     h2 {
         color: #787C84;
         font-weight: 600;
-        font-size: 22px;
-        line-height: 36px;
-        margin-bottom: 16px;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 12px;
     }
 
     p {
-        font-size: 32px;
-        line-height: 48px;
+        font-size: 22px;
+        line-height: 28px;
         font-weight: 600;
         max-width: 934px;
-        margin: 0 auto 96px auto;
+        margin: 0 auto 40px auto;
     }
 
     .design-block {
         margin-bottom: 56px;
+    }
+
+    @media screen and (min-width: 768px) {
+        h2 {
+            font-size: 22px;
+            line-height: 36px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 32px;
+            line-height: 48px;
+            margin: 0 auto 96px auto;
+        }
     }
 </style>

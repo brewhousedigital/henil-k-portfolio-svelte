@@ -7,6 +7,7 @@
     export let content = "";
     export let href = "";
     export let src = "";
+    export let ctaColor = "";
 
     function prettyIndex(index) {
         let increment = index + 1;
@@ -19,17 +20,17 @@
 
 <div class="case-study-container">
 <div class="row align-items-center">
-    <div class="col-lg-6">
+    <div class="col-lg-6 order-lg-first order-last">
         <div class="content">
             <div class="tag">
                 <span>{prettyIndex(index)}// </span>{tag}
             </div>
 
             <h3>{title}</h3>
-            <p>{content}</p>
+            <p class="d-md-block d-none">{content}</p>
 
             <div>
-                <a {href} class="btn-cta" sveltekit:prefetch>
+                <a {href} class="btn-cta btn-cta-{ctaColor}" sveltekit:prefetch>
                     <span>View Case</span>
                     <IconArrowRight />
                 </a>
@@ -46,15 +47,29 @@
 
 <style>
     .case-study-container{
-        padding: 0 80px;
+        padding: 0 4px;
     }
+
+    @media screen and (min-width: 768px) {
+        .case-study-container{
+            padding: 0 80px;
+        }
+    }
+
     .content {
         max-width: 461px;
+        margin-bottom: 56px;
+    }
+
+    @media screen and (min-width: 768px) {
+        .content {
+            margin-bottom: 0;
+        }
     }
 
     .tag {
         color: #999999;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 30px;
         font-weight: 500;
         margin-bottom: 8px;
@@ -66,9 +81,9 @@
 
     .content h3 {
         font-weight: 600;
-        font-size: 32px;
-        line-height: 42px;
-        margin-bottom: 24px;
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 16px;
     }
 
     .content p {
@@ -76,5 +91,27 @@
         color: #999999;
         line-height: 32px;
         margin-bottom: 32px;
+    }
+
+    img {
+        margin-bottom: 16px;
+    }
+
+
+
+    @media screen and (min-width: 768px) {
+        .tag {
+            font-size: 18px;
+        }
+
+        .content h3 {
+            font-size: 32px;
+            line-height: 42px;
+            margin-bottom: 24px;
+        }
+
+        img {
+            margin-bottom: 0;
+        }
     }
 </style>

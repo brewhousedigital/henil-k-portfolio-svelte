@@ -4,7 +4,7 @@
     "title": "A cycling app: organize rides & manages fitness activity",
     "content": "A cycle is a service app that Manages your fitness with daily activity, Organize rides, and provides facelites to buy an cycle.",
     "href": "#",
-    "ctaColor": "#0F5B55",
+    "ctaColor": "0F5B55",
     "src": "/images/case-studies/case-study-cycle-app.png"
   },
   {
@@ -12,7 +12,7 @@
     "title": "Digital Store: e-commerce app",
     "content": "Digital Store- Company that provides service to the local stores and end-users to Manage orders and do Pre-order anything from the nearest store.",
     "href": "#",
-    "ctaColor": "#312651",
+    "ctaColor": "312651",
     "src": "/images/case-studies/case-study-digital-store.png"
   },
   {
@@ -20,7 +20,7 @@
     "title": "Wires2Visual: Service website",
     "content": "Wires2Visual provides services to build data-heavy apps from concept to completion. ",
     "href": "#",
-    "ctaColor": "#C44E6B",
+    "ctaColor": "C44E6B",
     "src": "/images/case-studies/case-study-wires-to-visuals.png"
   }
 ]
