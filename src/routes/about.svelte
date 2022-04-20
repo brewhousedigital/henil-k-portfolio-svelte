@@ -9,7 +9,11 @@
     <div class="container">
         <div class="row align-items-center justify-content-between">
             <div class="col-auto">
-                <img src="/images/graphics/about-photo.jpg" alt="Henil Portrait" class="img-fluid" />
+                <img src="/images/graphics/about-photo.jpg"
+                     alt="Henil Portrait"
+                     class="img-fluid"
+                     height="600"
+                     width="461" />
             </div>
 
             <div class="col intro-content">
