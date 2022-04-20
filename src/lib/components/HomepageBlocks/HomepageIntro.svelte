@@ -62,6 +62,7 @@
         #intro p {
             font-weight: 500;
             font-size: 32px;
+            line-height: 40px;
             margin-bottom: 72px;
         }
     }
