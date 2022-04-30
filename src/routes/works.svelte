@@ -1,6 +1,8 @@
 <script>
     import listOfCaseStudies from "$lib/data/listOfCaseStudies.json";
     import CaseStudy from "$lib/components/CaseStudy.svelte";
+    import ContactFooter from "$lib/components/ContactFooter.svelte";
+    import HomepageBlockContainer from "$lib/components/HomepageBlocks/HomepageBlockContainer.svelte";
 </script>
 
 
@@ -21,6 +23,10 @@
         </div>
     {/each}
 </div>
+
+<HomepageBlockContainer customHeight="50vh">
+    <ContactFooter />
+</HomepageBlockContainer>
 
 
 <style>
