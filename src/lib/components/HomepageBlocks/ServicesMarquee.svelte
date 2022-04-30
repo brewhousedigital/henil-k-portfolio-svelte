@@ -2,6 +2,8 @@
     import Marquee3k from 'marquee3000';
     import {onMount} from "svelte";
 
+    export let standalone = false;
+
     onMount(() => {
         Marquee3k.init();
 
@@ -12,7 +14,7 @@
 </script>
 
 
-<div class="marquee-wrapper">
+<div class="marquee-wrapper {standalone ? 'active' : ''}">
     <div class="marquee-border"><img src="/images/marquee/marquee-border.png" alt="border" class="img-fluid" /></div>
 
     <div class="marquee">
@@ -68,6 +70,10 @@
         opacity: 0;
         transition: all 1000ms;
         transition-delay: 1000ms;
+    }
+
+    .marquee-wrapper.active {
+        opacity: 1;
     }
 
     .marquee {

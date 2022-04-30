@@ -4,39 +4,47 @@
     import Pulse from "$lib/assets/Pulse.svelte";
     import PaperPlane from "$lib/assets/PaperPlane.svelte";
 
+    export let standalonePage = false;
+
     let email = "henilpatel0606@gmail.com";
 </script>
 
 
 <section id="contact-footer">
-    <div class="container contact-footer-content text-xl-start text-center">
-        <div class="row align-items-center">
-            <div class="col-xl-6 content">
+    <div class="container contact-footer-content {standalonePage ? '' : 'text-xl-start'}  text-center">
+        <div class="row align-items-center position-relative z-index-1">
+            <div class="{standalonePage ? 'col-xl-12 mb-56 content-standalone' : 'col-xl-6'} content">
                 <div class="pulse"><Pulse /></div>
 
                 <h2>Sounds Match?</h2>
 
-                <p>You are in need of fresh start. A renewal. Perheps an Mindful and Seamless experience of website and mobile application;</p>
+                <p class="{standalonePage ? 'mx-auto' : ''}">You are in need of fresh start. A renewal. Perhaps an Mindful and Seamless experience of website and mobile application;</p>
 
                 <br>
 
-                <p class="lets-chat">Let’s chat!</p>
+                <p class="lets-chat {standalonePage ? 'mx-auto mb-0' : ''}">Let’s chat!</p>
             </div>
 
-            <div class="col-xl-6 text-center">
-                <a href="mailto:{email}" target="_blank" class="btn-cta outlined">
+            <div class="{standalonePage ? 'col-xl-12 block active' : 'col-xl-6'} text-center">
+                <a href="mailto:{email}" target="_blank" class="btn-cta outlined {standalonePage ? 'bg-white mb-4' : ''}">
                     <span>{email}</span>
                     <IconArrowRight />
                 </a>
+                {#if standalonePage}
+                    <a href="/" target="_blank" class="ms-md-4 mb-4 btn-cta outlined bg-white">
+                        <span>LinkedIn</span>
+                        <IconArrowRight />
+                    </a>
+                {/if}
             </div>
         </div>
 
-        <div class="plane">
+        <div class="plane {standalonePage ? 'centered-plane' : ''}">
             <PaperPlane classes="" />
         </div>
     </div>
 
-    <ServicesMarquee />
+    <ServicesMarquee standalone={true} />
 </section>
 
 
@@ -59,11 +67,13 @@
     .contact-footer-content {
         margin-bottom: 96px;
         position: relative;
+
     }
 
     .content p {
         font-size: 20px;
         line-height: 28px;
+        color: #5F6063;
     }
 
     .lets-chat {
@@ -80,6 +90,10 @@
         .content p {
             max-width: 430px;
         }
+
+        .content-standalone p {
+            max-width: 563px;
+        }
     }
 
     .pulse {
@@ -90,6 +104,8 @@
         position: absolute;
         left: -216px;
         bottom: -115px;
+        user-select: none;
+        z-index: 0;
     }
 
     :global(.plane svg) {
@@ -145,5 +161,16 @@
         }
 
         :global(.plane svg) {width: 100%;}
+    }
+
+    .mb-56 {
+        margin-bottom: 56px;
+    }
+
+    .z-index-1 {z-index: 1;}
+
+    .centered-plane {
+        bottom: -22px;
+        left: -99px;
     }
 </style>
