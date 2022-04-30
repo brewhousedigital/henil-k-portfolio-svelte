@@ -8,6 +8,8 @@
     export let href = "";
     export let src = "";
     export let ctaColor = "";
+    export let standalone = false;
+    export let reverse = false;
 
     function prettyIndex(index) {
         let increment = index + 1;
@@ -18,9 +20,9 @@
     }
 </script>
 
-<div class="case-study-container">
-<div class="row align-items-center">
-    <div class="col-lg-6 order-lg-first order-last">
+<div class="case-study-container {standalone ? 'p-0' : ''}">
+<div class="row g-0 align-items-center">
+    <div class="col-lg-6 {reverse ? 'ps-121' : 'order-lg-first pe-121'} order-last">
         <div class="content">
             <div class="tag">
                 <span>{prettyIndex(index)}// </span>{tag}
@@ -49,6 +51,9 @@
     .case-study-container{
         padding: 0 4px;
     }
+
+    .ps-121 {padding-left: 121px}
+    .pe-121 {padding-right: 121px}
 
     @media screen and (min-width: 768px) {
         .case-study-container{
