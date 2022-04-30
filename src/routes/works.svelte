@@ -39,7 +39,15 @@
         padding-top: 64px;
     }
 
-    .case-study {
-        margin-bottom: 120px;
+    @media screen and (max-width: 768px) {
+        .case-study {
+            padding: 0 4px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .case-study {
+            margin-bottom: 120px;
+        }
     }
 </style>

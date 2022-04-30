@@ -52,22 +52,24 @@
         padding: 0 4px;
     }
 
-    .ps-121 {padding-left: 121px}
-    .pe-121 {padding-right: 121px}
+
 
     @media screen and (min-width: 768px) {
+        .ps-121 {padding-left: 121px}
+        .pe-121 {padding-right: 121px}
+
         .case-study-container{
             padding: 0 80px;
         }
     }
 
     .content {
-        max-width: 461px;
         margin-bottom: 56px;
     }
 
     @media screen and (min-width: 768px) {
         .content {
+            max-width: 461px;
             margin-bottom: 0;
         }
     }
@@ -103,6 +105,9 @@
     }
 
 
+    @media screen and (max-width: 768px) {
+
+    }
 
     @media screen and (min-width: 768px) {
         .tag {

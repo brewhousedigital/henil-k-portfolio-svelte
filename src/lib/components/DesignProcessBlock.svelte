@@ -96,5 +96,15 @@
             font-size: 20px;
             line-height: 31px;
         }
+
+        .icon img {
+            filter: grayscale(1) saturate(0%) brightness(0%) contrast(1000%) invert(1);
+            opacity: 0.1;
+        }
+
+        .block.active .icon img {
+            filter: initial;
+            opacity: 1
+        }
     }
 </style>
