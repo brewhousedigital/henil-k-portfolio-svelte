@@ -13,7 +13,7 @@
     <div class="case-study-header">
         <div class="container d-flex align-items-center justify-content-between">
             <h2 class="text-lg-start text-center col-lg-auto col">Outcomes that brings value</h2>
-            <a class="btn-cta slim d-lg-block d-none">
+            <a class="btn-cta no-bg slim d-lg-block d-none">
                 <span>See All Projects</span>
                 <IconArrowRight />
             </a>
