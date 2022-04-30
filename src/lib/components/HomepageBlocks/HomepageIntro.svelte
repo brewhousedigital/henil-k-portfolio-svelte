@@ -1,35 +1,61 @@
 <script>
     import IconArrowRight from "$lib/assets/IconArrowRight.svelte";
+    import HomepageIntroArrows from "$lib/assets/HomepageIntroArrows.svelte";
 </script>
 
 
 <section id="intro">
     <div class="container">
-        <div class="content">
-            <h2>Hi, I'm Henil</h2>
-            <p>A self-taught UX/UI designer. I create mindful and seamless user experiences that communicate via beautiful interfaces from concept to completion.</p>
+         <div class="row g-0">
+             <div class="col content">
+                 <h2>Hi, I'm Henil</h2>
+                 <p>A self-taught UX/UI designer. I create mindful and seamless user experiences that communicate via beautiful interfaces from concept to completion.</p>
 
-            <div>
-                <a href="/" class="btn-cta" sveltekit:prefetch>
-                    <span>Let's work together</span>
-                    <IconArrowRight />
-                </a>
-            </div>
-        </div>
+                 <div>
+                     <a href="/" class="btn-cta no-bg" sveltekit:prefetch>
+                         <span>Let's work together</span>
+                         <IconArrowRight />
+                     </a>
+                 </div>
+             </div>
+             <div class="col-auto d-lg-block d-none">
+                <img src="/images/graphics/homepage-intro-bulb.svg" alt="" class="img-fluid" />
+             </div>
+         </div>
     </div>
+
+    <div class="intro-arrows"><HomepageIntroArrows /></div>
 </section>
 
 
 <style>
     #intro {
+        position: relative;
         min-height: calc(100vh - 100px);
         background-color: #000;
         padding-top: 108px;
     }
 
     #intro .content {
+        width: 100%;
         max-width: 703px;
         color: #fff;
+    }
+
+    .intro-arrows {
+        position: absolute;
+        bottom: 40px;
+        left: calc(50% - 20px);
+        animation-name: introArrowsAnimation;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+    }
+
+    @keyframes introArrowsAnimation {
+        0% {transform: translateY(0px)}
+        100% {transform: translateY(15px)}
     }
 
     #intro h2 {

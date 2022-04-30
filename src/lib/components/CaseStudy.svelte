@@ -112,7 +112,7 @@
         .content h3 {
             font-size: 32px;
             line-height: 42px;
-            margin-bottom: 24px;
+            margin-bottom: 16px;
         }
 
         img {

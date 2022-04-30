@@ -88,12 +88,12 @@
         }
 
         p {
-            font-size: 24px;
+            font-size: 20px;
             line-height: 36px;
         }
 
         .hover {
-            font-size: 24px;
+            font-size: 20px;
             line-height: 31px;
         }
     }

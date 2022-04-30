@@ -67,13 +67,20 @@
     .contact-footer-content {
         margin-bottom: 96px;
         position: relative;
-
     }
 
     .content p {
         font-size: 20px;
         line-height: 28px;
         color: #5F6063;
+        font-weight: 600;
+    }
+
+    @media screen and (min-width: 1200px) {
+        #contact-footer h2 {
+            font-size: 32px;
+            line-height: 48px;
+        }
     }
 
     .lets-chat {

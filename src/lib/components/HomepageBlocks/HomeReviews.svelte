@@ -61,7 +61,9 @@
             </div>
 
             <div class="d-lg-block d-none col-auto">
-                <img src="/images/divider.png" alt="divider" class="img-fluid d-block" />
+                {#if activeReviewIndex === 0}<img src="/images/divider-green.png" alt="divider" class="img-fluid d-block"/>{/if}
+                {#if activeReviewIndex === 1}<img src="/images/divider-purple.png" alt="divider" class="img-fluid d-block"/>{/if}
+                {#if activeReviewIndex === 2}<img src="/images/divider-red.png" alt="divider" class="img-fluid d-block"/>{/if}
             </div>
 
             <div class="testimonial col-lg col-12 text-md-start text-center" data-highlight={testimonial.bgColor}>
@@ -197,6 +199,10 @@
         font-size: 20px;
         line-height: 32px;
         font-weight: 500;
+    }
+
+    :global(.testimonial h3) {
+        margin-bottom: 20px;
     }
 
     @media screen and (min-width: 768px) {
